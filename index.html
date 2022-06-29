@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="getLocation()" style="height:40px;width:250px; background-color:red;">Try It</button>
+
+
+<form action="https://docs.google.com/forms/d/e/1FAIpQLScgiHW8i6bD1UBoaAMaMOu7RL7GI7C0Njnsr9KShZa5yCsjKw/formResponse"  method="post" id="fm">
+  
+  <div id="demo"> </div>
+<input type="" name="entry.921194256" id="inp" value="" style="display:non;">
+ <input type="submit"style="background-color:green; padding:40px;" name="" id="" value="submit" />
+</form>
+ <input type="submit" id="" onclick="start()"/>
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "webpage is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = " " + position.coords.latitude + 
+  " + " + position.coords.longitude;
+}
+</script>
+  
+
+  <script type="text/javascript" charset="utf-8"> function start() {
+    
+  
+    var m1 = document.getElementById("demo").value;
+            inp.innerHTML= m1; }
+          
+  </script>
+
+</body>
+</html>
